@@ -13,7 +13,7 @@ public class UserProfileService {
 	@Produces("text/html")
 	public Response addUser(@FormParam("clientName")String name,@FormParam("gender")String gender,@FormParam("age")int age) {
 		
-		return Response.status(200).entity("<p>New User Recoed Is Added<br> Name "+name +"Age "+age+"Gender "+gender+"</p>").build();
+		return Response.status(200).entity("<p>New User Record Is Added<br> Name "+name +"<br>Age "+age+"<br>Gender "+gender+"</p>").build();
 	}
 	
 }
